@@ -3,4 +3,19 @@
   host: localhost
 
   tasks:
+
+    - name: Create Student Git credential
+      ansible.controller.credential:
+        name: Student Git
+        description: Student Git credential
+        organization: Default
+        controller_host: https://controller.lab.example.com
+        controller_username: student
+        controller_password: StuD3nt123!@
+        state: present
+        credential_type: Source Control
+        inputs:
+          username: student
+          Password: StuD3nt123!@
+
   
