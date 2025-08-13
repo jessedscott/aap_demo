@@ -17,6 +17,6 @@
         credential_type: Source Control
         inputs:
           username: student
-          Password: StuD3nt123!@
+          password: StuD3nt123!@
 
   
