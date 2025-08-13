@@ -34,6 +34,23 @@
         scm_clean: true
         scm_update_on_launch: true
 
+    - name: Create Install IIS job template
+      ansible.controller.job_template:
+        name: Install IIS
+        description: Installs and starts IIS
+        organization: Default
+        controller_host: https://controller.lab.example.com
+        controller_username: admin
+        controller_password: redhat
+        validate_certs: false
+        job_type: "run"
+        inventory: Dev
+        project: Run Practice
+        playbook: install-iis.yml
+        credentials:
+          - "devops"
+        state: present
+
 
 
   
