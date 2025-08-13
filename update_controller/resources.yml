@@ -1,6 +1,6 @@
 ---
 - name: Create custom resources in controller
-  host: localhost
+  hosts: localhost
 
   tasks:
 
