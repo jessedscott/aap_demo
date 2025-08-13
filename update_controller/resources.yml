@@ -19,4 +19,21 @@
           username: student
           password: StuD3nt123!@
 
+    - name: Create Run Practice project
+      ansible.controller.project:
+        name: Run Practice
+        description: Single playbook practice project
+        organization: Default
+        controller_host: https://controller.lab.example.com
+        controller_username: admin
+        controller_password: redhat
+        validate_certs: false
+        state: present
+        scm_type: git
+        scm_url: https://git.lab.example.com/student/playbooks.git
+        scm_clean: true
+        scm_update_on_launch: true
+
+
+
   
