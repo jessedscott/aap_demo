@@ -10,8 +10,9 @@
         description: Student Git credential
         organization: Default
         controller_host: https://controller.lab.example.com
-        controller_username: student
-        controller_password: StuD3nt123!@
+        controller_username: admin
+        controller_password: redhat
+        validate_certs: false
         state: present
         credential_type: Source Control
         inputs:
